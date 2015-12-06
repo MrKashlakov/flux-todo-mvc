@@ -8,8 +8,6 @@ var babelify = require('babelify');
 var browserify = require('browserify');
 var source = require('vinyl-source-stream');
 
-var WebpackDevServer = require('webpack-dev-server');
-
 gulp.task('default', ['watch']);
 
 gulp.task('watch', ['webpack:build-dev'], function () {
@@ -53,4 +51,3 @@ gulp.task('webpack:build-dev', function (callback) {
 		callback();
 	});
 });
-

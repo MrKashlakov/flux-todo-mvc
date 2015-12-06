@@ -46,5 +46,8 @@ module.exports = {
 	],
 	plugins: [
 		new extractTextPlugin('bundle.css')
-	]
+	],
+	resolve: {
+		root: path.resolve('./')
+	}
 };
